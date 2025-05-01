@@ -1,5 +1,7 @@
-/* src/components/Footer.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 .footer {
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   padding: 1rem;
   background-color: #f4f4f4;
