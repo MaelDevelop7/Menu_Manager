@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# 🧾 Menu Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Une application web progressive (PWA) pour gérer, planifier et aimer des recettes – développée comme cadeau d’anniversaire pour ma mère, et comme projet personnel pour enrichir mon portfolio développeur.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Objectif
 
-### `npm start`
+Créer une application moderne, responsive et intuitive pour gérer ses recettes préférées, les planifier facilement, et y accéder depuis n’importe quel appareil.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Stack technique
 
-### `npm test`
+- ⚛️ **React** (avec Vite ou Create React App)
+- 🔥 **Firebase** (Auth + Firestore)
+- 🎨 **TailwindCSS**
+- 📆 **React Big Calendar** (ou tableau personnalisé)
+- 💾 **GitHub Pages** pour le déploiement
+- 💻 **Git & GitHub** pour le versioning
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Fonctionnalités
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔹 Version 1.0 — MVP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Ajouter / Supprimer des recettes (titre, ingrédients, étapes, image).
+- Bouton **"J’aime"** pour ajouter aux **favoris**.
+- **Calendrier simple** pour planifier les recettes dans la semaine.
+- Design **responsive** (mobile-first).
+- Déploiement initial sur **GitHub Pages**.
+- Gestion propre du projet avec **branches Git** par fonctionnalité.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔹 Version 1.5 — Version connectée
 
-### `npm run eject`
+- Authentification Firebase (Email/Password ou Google).
+- Base de données Firebase :
+  - `recettes` : titre, description, étapes, image, auteur.
+  - `favoris` : UID utilisateur + ID recette.
+  - `planification` : UID + recette + date.
+- Affichage personnalisé selon l’utilisateur connecté :
+  - Mes recettes
+  - Mes favoris
+  - Mon planning de repas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧱 Structure du projet
+```bash
+src/
+  components/
+  pages/
+  hooks/
+  services/      # Firebase interactions
+  styles/
+  utils/
+```
